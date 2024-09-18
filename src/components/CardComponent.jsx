@@ -1,8 +1,12 @@
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 
-export function Card() {
+export function Card({category,title,description}) {
   return (
-    (<CardSpotlight className="h-96 w-96">
+    (<CardSpotlight className="h-96 w-96 flex flex-col gap-6
+     justify-center">
+      <h4 className="text-2xl font-bold ">{category}</h4>
+      <p className="">{title}</p>
+      <p className="text-sm">{description}</p>
      
     </CardSpotlight>)
   );

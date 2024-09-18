@@ -4,6 +4,7 @@ import ButtonComponent from "@/components/Button";
 import ShimmerButton from "@/components/ShimmerButton";
 
 import {
+  cardData,
   CTA1,
   CTA2,
   LandingPageHeading,
@@ -15,6 +16,12 @@ import { AppleCardsCarouselDemo } from "@/components/AppleCarousel";
 import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
 import { StickyScroll } from "@/components/ui/StickyScrollReveal";
 import { Card } from "@/components/CardComponent";
+import {
+  InfiniteMovingCards,
+  MovingCards,
+} from "@/components/InfiniteMovingCard";
+import { LampContainer, LampDemo } from "@/components/ui/lamp";
+import { WavyBackgroundFooter } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -40,25 +47,79 @@ export default function Home() {
             <ShimmerButton>{CTA2}</ShimmerButton>
           </div>
         </BackGround>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0.0, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+      >
         <AppleCardsCarouselDemo />
         <section className="relative w-full min-h-screen">
           <StickyScroll className="" content={stickyContent} />
         </section>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0.0, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+      >
         <section className="relative w-full min-h-screen">
           <BackgroundBeams />
           <h4 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
-            Sanjana Airlines, <br /> Sajana Textiles.
+            Join a Musical Journey <br /> Like No Other.
           </h4>
           <div className="max-w-7xl mt-6 mx-auto flex flex-wrap gap-3 justify-center">
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            {cardData.map((card) => (
+              <Card key={card.title} {...card} />
+            ))}
           </div>
         </section>
       </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0.0, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+      >
+        <section>
+          <div className="relative">
+            <LampDemo />
+          </div>
+          <div className="absolute z-20 translate-x-[-50%] translate-y-[-50%] left-[50%] ">
+            <MovingCards />
+          </div>
+        </section>
+      </motion.div>
+      <footer className="relative">
+        <WavyBackgroundFooter />
+        <div className="absolute z-40 flex flex-col gap-4  top-[50%] left-[50%] translate-x-[-50%]" >
+        
+       
+            <input
+              type="text"
+              placeholder="hi@manuarora.in"
+              className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-[380px] relative mt-[-3rem] md:mt-4 p-3 bg-neutral-950 placeholder:text-neutral-700"
+          />
+          <div className="flex justify-center">
+            <ButtonComponent>Join Now</ButtonComponent>
+            </div>
+        
+
+        </div>
+      </footer>
     </div>
   );
 }

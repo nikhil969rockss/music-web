@@ -57,6 +57,8 @@ export const data = [
       content: <DummyContent />,
     },
 ];
+
+//sticky content data
   
 export const stickyContent = [
   {
@@ -142,4 +144,77 @@ export const stickyContent = [
       </div>
     ),
   }
+];
+
+// section 4 data
+
+export const cardData = [{
+  category: "Alumni Success Stories",
+  title: "Hear from Our Graduates",
+  description: "Discover the journeys of our former students who are now successful musicians, performers, and educators. Their achievements inspire the next generation of talent.",
+
+},
+  {
+    category: "Community Engagement",
+    title: "Be Part of a Musical Community",
+    description: "Our school isn’t just about learning—it’s about belonging. Join a vibrant community of music lovers, participate in collaborative projects, and connect with peers who share your passion.",
+
+  },
+  {
+    category: "Parent Involvement Programs",
+    title: "Support for Young Musicians",
+    description: "We encourage parents to get involved in their child’s musical development. Through regular updates, progress reports, and family-inclusive events, we keep parents informed and engaged.",
+
+  },
+  {
+    category: "Music Camps and Workshops",
+    title: "Intensive Learning Opportunities",
+    description: "Experience immersive music camps and workshops where students dive deep into their craft, work with guest artists, and collaborate in new ways. Ideal for those looking to push their boundaries.",
+
+  },
+  {
+    category: "Music Therapy Programs",
+    title: "Healing Through Music",
+    description: "Our music therapy sessions offer a unique way to connect and heal through sound. Perfect for individuals looking to explore the therapeutic power of music in a supportive environment.",
+
+  },
+  {
+    category: "Instrument Rental Services",
+    title: "Play Without the Commitment",
+    description: "Don’t have an instrument yet? No problem! We offer affordable instrument rental options so you can start learning without the upfront investment in expensive gear.",
+
+  },
+]
+
+// testimonials Data 
+export const testimonials = [
+  {
+    quote:
+      "The atmosphere at Music School is truly special. I’ve always wanted to learn how to play the piano, but I was nervous about starting as an adult beginner. The teachers here are incredibly patient and make learning fun and engaging. They tailor each lesson to my pace, and I’ve made so much progress without feeling overwhelmed. I can’t recommend them enough!",
+    name: "– Emily W.",
+    title: "",
+  },
+  {
+    quote:
+      "My son has been taking guitar lessons here for over a year, and I’m amazed at how much he’s learned! The instructors are not only talented musicians but also fantastic educators who really know how to connect with young learners. They make the lessons exciting and keep him motivated. Plus, the regular recitals give him a chance to show off his skills, which has boosted his confidence tremendously.",
+    name: "– David M.",
+    title: "",
+  },
+  {
+    quote: "I’ve attended both in-person and online lessons at [Music School Name], and both experiences have been top-notch. The online platform is super easy to use, and the quality of instruction doesn’t drop at all—it feels like you’re in the room with your teacher! The flexibility to choose between online and in-person lessons has made it so much easier to fit music into my life. It’s the best of both worlds!",
+    name: "– Anna K.",
+    title: "",
+  },
+  {
+    quote:
+      "What really sets this school apart is the sense of community. You’re not just coming here for lessons; you’re joining a supportive, creative family. The group workshops and jam sessions are so much fun, and they’ve really helped me grow as a musician. Everyone, from the instructors to the fellow students, is encouraging and collaborative. It’s a great place to not only improve your skills but also make friends and share your passion for music.",
+    name: "– Jack R.",
+    title: "",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "",
+  },
 ];
