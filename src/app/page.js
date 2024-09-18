@@ -111,7 +111,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="hi@manuarora.in"
-              className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-[380px] relative mt-[-3rem] md:mt-4 p-3 bg-neutral-950 placeholder:text-neutral-700"
+            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-[380px] relative mt-[-3rem] md:mt-4 p-3 bg-transparent focus:bg-blue-[#689CDB] placeholder:text-neutral-200 text-black"
           />
           <div className="flex justify-center">
             <ButtonComponent>Join Now</ButtonComponent>
