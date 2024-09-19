@@ -18,11 +18,11 @@ export default function  DummyContent({title, content, img}){
             thought.
           </p>
           <Image
-            src=""
-            alt="Macbook mockup from Aceternity UI"
+            src={img}
+            alt=""
             height="500"
             width="500"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain" />
+            className="rounded-md h-full w-full mx-auto object-cover aspect-square" />
         </div>)
       );
     })}

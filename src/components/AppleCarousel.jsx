@@ -2,10 +2,10 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/PhotoCarousel";
-import { data, Heading, subHeading } from "@/utils/constants";
+import { carouselData, Heading, subHeading } from "@/utils/constants";
 
 export function AppleCardsCarouselDemo() {
-  const cards = data.map((card, index) => (
+  const cards = carouselData.map((card, index) => (
     <Card key={card.src} card={card} index={index} layout={true} />
   ));
 

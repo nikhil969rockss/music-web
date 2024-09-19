@@ -22,6 +22,7 @@ import {
 } from "@/components/InfiniteMovingCard";
 import { LampContainer, LampDemo } from "@/components/ui/lamp";
 import { WavyBackgroundFooter } from "@/components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -43,8 +44,8 @@ export default function Home() {
             {LandingPageSubHeading}
           </div>
           <div className="flex flex-col md:flex-row gap-4">
-            <ButtonComponent>{CTA1}</ButtonComponent>
-            <ShimmerButton>{CTA2}</ShimmerButton>
+            <Link href={'/signUp'} ><ButtonComponent>{CTA1}</ButtonComponent></Link>
+            <Link href={'/courses'} ><ShimmerButton>{CTA2}</ShimmerButton></Link>
           </div>
         </BackGround>
       </motion.div>

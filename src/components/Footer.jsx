@@ -10,7 +10,7 @@ export function WavyBackgroundFooter() {
         Let’s Make Music Together
       </p>
       <p
-        className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+        className="text-base md:text-lg my-4 text-white font-normal inter-var text-center">
         Join Our Musical Community
       </p>
     </WavyBackground>)
